@@ -8,7 +8,7 @@ body{
     box-sizing: border-box;
     font-family: 'Labrada', serif;
     font-family: 'Nanum Myeongjo', serif;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(80, 38, 38);
     color:#ffff
 }
 
@@ -25,7 +25,7 @@ body{
 
 div {
     width: auto;
-    border: 10px solid rgb(2, 83, 129);
+    border: 5px solid rgb(2, 83, 129);
     padding: 20px;
     margin: 10px;
   }
