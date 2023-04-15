@@ -18,8 +18,8 @@ body{
     color:inherit;
     font-size: x-large;
     border-top: 5px inset rgba(172, 184, 247, 0.897);
-    border-bottom: 5px outset rgba(201, 123, 190, 0.897);
-    padding: 20px;
+    border-bottom: 5px outset rgba(123, 201, 129, 0.897);
+    padding: 8px;
     margin: 5px;
 }
 
