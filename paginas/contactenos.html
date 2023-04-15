@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>contactenos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav>
+        <!-- Contenido Principa -->
+        <h2>Inicio</h2>
+    <div id="menust">
+    <ul>
+        <li><a href="../index.html">Inicio</a> </li>
+        <li><a href="../paginas/Categorias.html">Categorías</a> </li>
+        <li><a href="../paginas/ofertas.html">Ofertas del dia</a></li>
+        <li><a href="../paginas/cupones.html">Tus Cupones </a></li>
+        <li><a href="../paginas/contactenos.html">Contactenos </a></li>
+    </div>
+    </ul>
+    </nav>
+    <p>dejanos tu informacion y pronto nos pondremos en contacto</p>
+    <form action="">
+        <div>
+            <label for="name">Nombres:</label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label for="Apellido">Apellidos:</label>
+            <input type="text"name="Apellido" >
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="">
+        </div>
+        <div>
+            <label for="mensaje">-Dejanos tus comentarios:</label>
+            <textarea name="mensaje" id="" cols="40" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="sexo"> Indique su Sexo </label>
+            <input type="radio" name="sexo" value="F"> F
+            <input type="radio" name="sexo" value="M"> M
+            <input type="radio" name="sexo" value="Otro"> Otro
+        </div>
+        <div>
+            <label for="pais">Elige tu Pais</label>
+            <select name="pais">
+            <option value="Otro">Otro</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ecuador">Ecuador</option>
+        </select>
+        </div>
+        <div>
+            <input type="reset" value="Borra todo">
+            <input type="submit" value="Enviar">
+            <input type="button" value="Orden">
+        </div>
+        <div>
+            <fieldset>
+             <legend>Legales del Formulario </legend>
+                <label for="termino">Aceptas nuestros Términos y Condiciones</label>
+                <input type="checkbox" name="termino" value="termino" required>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>

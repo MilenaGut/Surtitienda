@@ -1,0 +1,121 @@
+/* importante resetear estas propiedades */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Labrada', serif;
+    font-family: 'Nanum Myeongjo', serif;
+    background-color: rgb(255, 255, 255);
+    color:#ffff
+}
+
+.titul{
+
+    background-color: rgb(5, 28, 39);
+    color:inherit;
+    font-size: x-large;
+    border-top: 5px inset rgba(172, 184, 247, 0.897);
+    border-bottom: 5px outset rgba(201, 123, 190, 0.897);
+    padding: 20px;
+    margin: 5px;
+}
+
+div {
+    width: auto;
+    border: 10px solid rgb(2, 83, 129);
+    padding: 20px;
+    margin: 10px;
+  }
+
+.Azul{
+    /* color: rgb(18, 48, 75);
+    background-color: aqua; */
+/* overflow: auto; */
+    padding-top: 50px ;
+    padding-right: 20px;
+    padding-bottom: 20 ;
+    padding-left: 20px ; 
+    border: solid 20px rgb(53, 20, 75);
+}
+
+#menust{
+    background-color: rgb(9, 112, 112);
+}
+
+#menust ul{
+
+    list-style-type: style none;
+}
+
+#menust ul li{
+    display:inline-block;
+}
+#menust ul li a{ 
+    color:rgb(22, 19, 21);
+    display: block;
+    padding: 8px;
+    text-decoration:none;
+    font-size:xx-large;
+}
+
+#menust ul li a:hover{ 
+    background-color: lightgreen;
+    
+}
+p{
+    color: rgb(1, 1, 17);
+    
+}
+
+.imagentexto{
+    position: fixed ;
+    z-index: 50;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.imagentexto
+
+.Nutricion{
+    position: relative;
+}
+
+
+
+.fruver2{
+    
+    width: 300px;
+    height:200px;
+    
+    
+}
+ .imagentexto{
+    
+    margin-top: 30px ;
+    margin-right: 20px;
+    margin-bottom: 98 ;
+    margin-left: 35px ;
+    padding: 20px; ;
+   
+ }
+
+
+
+    /* margin: 120px; */ /* todos los lados son iguales */
+   /*  margin: 120px 200px 98px 120px; */ /* cuando son diferentes */
+   
+
+
+.pie.pag{
+    justify-content: center;
+}
+/* 
+.imagentexto{
+    
+} */
+   
+/*  tipografia  */
+
+/* clases 15-04-2023 */
