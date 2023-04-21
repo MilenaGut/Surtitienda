@@ -2,47 +2,49 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
-body{
+.body{
+   
     box-sizing: border-box;
     font-family: 'Labrada', serif;
     font-family: 'Nanum Myeongjo', serif;
-    background-color: rgb(255, 255, 255);
-    color:#1c1141
+     
 }
+
 
 .titul{
-
-    background-color: rgb(5, 28, 39);
-    color:inherit;
+    /* background-color: rgb(4, 56, 59); */
+    background-image: url("../multimedia/fondo2.jpg");
+    image-resolution:unset ;
+    color: #fffdfd;;
     font-size: x-large;
+    text-align:center;
     border-top: 5px inset rgba(172, 184, 247, 0.897);
     border-bottom: 5px outset rgba(123, 201, 129, 0.897);
-    padding: 8px;
-    margin: 5px;
+    border-radius: 0.5em;
+    padding: 10px;
+    margin: 0.5px;
 }
 
-div {
+/* .div {
     width: auto;
     border: 5px solid rgb(2, 83, 129);
     padding: 20px;
     margin: 10px;
-  }
+  }  */
 
 .Azul{
-    /* color: rgb(18, 48, 75);
-    background-color: aqua; */
-/* overflow: auto; */
     padding-top: 50px ;
     padding-right: 20px;
     padding-bottom: 20 ;
     padding-left: 20px ; 
     border: solid 20px rgb(53, 20, 75);
 }
-
+ 
 #menust{
-    background-color: rgb(9, 112, 112);
+    background-color: rgb(7, 127, 136);
 }
 
 #menust ul{
@@ -51,18 +53,19 @@ div {
 }
 
 #menust ul li{
-    display:inline-block;
+    display:inline;
 }
 #menust ul li a{ 
-    color:rgb(22, 19, 21);
-    display: block;
-    padding: 8px;
-    text-decoration:none;
+    color:rgb(245, 239, 243);
+    padding: 5px;
+    margin:5px ;
+    text-decoration:double;
     font-size:xx-large;
 }
 
 #menust ul li a:hover{ 
-    background-color: lightgreen;
+    background-color: rgb(81, 3, 88);
+    color: blanchedalmond;
     
 }
 p{
@@ -75,47 +78,90 @@ p{
     z-index: 50;
     flex-wrap: wrap-reverse;
     justify-content: center;
+    margin: 20px;
+    padding: 20px; ;
 }
-.imagentexto
 
 .Nutricion{
-    position: relative;
+    position:fixed;
+    flex-direction: column;
 }
-
-
-
 .fruver2{
     
     width: 300px;
     height:200px;
-    
-    
+     
 }
- .imagentexto{
-    
-    margin-top: 30px ;
-    margin-right: 20px;
-    margin-bottom: 98 ;
-    margin-left: 35px ;
-    padding: 20px; ;
-   
- }
-
-
-
-    /* margin: 120px; */ /* todos los lados son iguales */
-   /*  margin: 120px 200px 98px 120px; */ /* cuando son diferentes */
-   
-
-
-.pie.pag{
+ .pie.pag{
     justify-content: center;
 }
-/* 
-.imagentexto{
-    
-} */
-   
-/*  tipografia  */
 
-/* clases 15-04-2023 */
+/* GRID - CONTENEDOR */
+.contenedortotal{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);/* 2 columnas */
+    grid-template-rows: 0.2fr 0.2fr 1fr 1fr 0.2fr; /* 4 filas */
+    grid-template-areas:
+    "titulo menu"
+    "contenidop1 contenidop2"
+    "publicidad publicidad"
+    "footer footer";
+    column-gap:15px;
+    row-gap:  15px;
+}
+.titul{
+    grid-area: titulo;
+}
+.header{
+    grid-area: menu;
+}
+.contenidop1{
+    grid-area: contenidop1;
+}
+.contenidop2{
+    grid-area: contenidop2;
+}
+.Publicidad{
+    grid-area: publicidad;
+}
+.pie.pag{
+    grid-area: footer;
+}
+/* aplicando estilo al formulario de contactenos */
+
+form{
+    margin: 0 auto;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 600px;
+    padding: 1em;
+    border:1px solid #ccc;
+    border-radius: 1em;
+    background-color: rgb(180, 224, 224);
+}
+
+label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 100px;
+    text-align:left;
+  }
+input,
+  textarea{
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 400px;
+    border:1px solid #ccc;
+    border-radius: 1em;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+    input[type="checkbox"]:checked{
+    box-shadow: 0 0 3px chocolate;
+    vertical-align: top;
+    border:1px solid #ccc;
+  }
+   option{
+     align-items: center;
+  }
+  
