@@ -23,7 +23,10 @@
         </ul>
     </div>
  </nav>
+ <div class="contactenos">
     <p>Dejanos tu información y pronto nos pondremos en contacto</p>
+</div>
+<div>
     <form action="/paginas/contactenos.html" method="post">
         <div>
             <label for="name">Nombres:</label>
@@ -42,7 +45,7 @@
             <label for="mensaje">Dejanos tus comentarios:</label>
             <textarea name="mensaje" id="" cols="40" rows="10"></textarea>
         </div>
-        <div>
+        <div class="seleccion">
             <label for="sexo"> Indique su Sexo </label>
             <input type="radio" name="sexo" value="F"> F
             <input type="radio" name="sexo" value="M"> M
@@ -62,8 +65,9 @@
             <input type="submit" value="Enviar">
             <input type="button" value="Orden">
         </div>
+    
      </form>
-        <div>
+        <div class="leyenda">
             <fieldset>
              <legend>Legales del Formulario </legend>
                 <label for="termino">Aceptas nuestros Términos y Condiciones</label>

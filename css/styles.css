@@ -4,6 +4,8 @@
     padding: 0;
     
 }
+@media (min-width: 700px) and (orientation: landscape) { ... }
+
 
 .body{
    
@@ -164,6 +166,19 @@ footer .box{
 }
 /* aplicando estilo al formulario de contactenos */
 
+.contactenos p{
+    text-align: center;        
+  }
+/* .leyenda{
+    display: inline-flexbox;
+    align-items: center;
+    width: 600px;
+    padding: 1em;
+    border:1px solid #ccc;
+    border-radius: 1em;
+    background-color: rgb(180, 224, 224);
+} */
+
 form{
     margin: 0 auto;
     font-family:Arial, Helvetica, sans-serif;
@@ -174,39 +189,42 @@ form{
     background-color: rgb(180, 224, 224);
 }
 
-label {
+form label{
     /* Tamaño y alineación uniforme */
     display: inline-block;
-    width: 100px;
+    width: 150px;
     text-align:left;
   }
-input,
-  textarea{
+form input,
+textarea{
     /* Tamaño y alineación uniforme */
     display: inline-block;
     width: 400px;
+    padding-right: 10px;
     border:1px solid #ccc;
     border-radius: 1em;
     box-sizing: border-box;
     vertical-align: top;
   }
-    input[type="checkbox"]:checked{
-    box-shadow: 0 0 3px chocolate;
-    vertical-align: top;
-    border:1px solid #ccc;
-    position:center;
-  }
-   option{
+
+  option{
      align-items: center;
      position:relative;
   }
-
+  
   fieldset{
-    display: inline-block;
+    margin: 0 auto;
+    font-family:Arial, Helvetica, sans-serif;
     width: 600px;
+    margin-top: 10px;
+    padding:1em;
     border:1px solid #ccc;
     border-radius: 1em;
-    box-sizing: border-box;
-   
+    background-color: rgb(180, 224, 224);
+     }
+fieldset label{
+    width: 300px;
 }
-  
+fieldset input{
+    vertical-align: text-top;
+}
