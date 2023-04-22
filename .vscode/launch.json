@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\Ing Dairon Romero\\Documents\\MGR P\\CODERHOUSE\\Preentrega1gutierrez\\index.html"
+            "file": "c:\\Users\\Ing Dairon Romero\\Documents\\MGR P\\CODERHOUSE\\Preentrega2gutierrez\\index.html"
         }
     ]
 }
