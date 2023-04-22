@@ -18,7 +18,7 @@
     background-color: rgb(48, 235, 235);
     color: #fffdfd;;
     font-size: 35px;
-    text-align:center;
+    text-align: center;
     border-top: 5px inset rgba(172, 184, 247, 0.897);
     border-bottom: 5px outset rgba(123, 201, 129, 0.897);
     border-radius: 0.2em;
@@ -26,37 +26,46 @@
     height: 60px;
 }
 
-.div {
+/* .div {
     width: auto;
     border: 5px solid rgb(2, 83, 129);
     padding: 20px;
     margin: 10px;
-  }  
+  }   */
 
 nav{
        height: 80px;
        background-color:#0c8c91;
-       text-align: center;
+       justify-self: center;        
      }
 
      nav ul{
         list-style: none;
-        display:inline-flex;
-        padding:10px;
+        display:inline-flexbox;
+        justify-content: center;
+        align-items: start;
+        padding:5px;
+        
      }
 
      nav ul li{
         float:left;
         margin: 5px;
-    }
+        justify-content: center;
+        
+     }
 
     nav ul li a {
         color: white;
         font-weight:lighter;
         text-decoration:underline;
-        font-size: 40px;
+        font-size: 35px;
+        flex-direction: row;
         padding: 10px;
+        
+        
     }
+        
 
     nav ul li a:hover {
         background-color: rgb(81, 3, 88);
@@ -67,15 +76,6 @@ p{
     
 }
 
-.imagentexto{
-    position: fixed ;
-    z-index: 50;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    margin: 20px;
-    padding: 20px; ;
-}
-
 .Nutricion{
     position:fixed;
     flex-direction: column;
@@ -84,6 +84,14 @@ p{
     
     width: 300px;
     height:200px;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-areas: 
+    "fruver2 fruver2"
+    "fruver2 fruver2"
+    ;
      
 }
  .pie.pag{
@@ -104,11 +112,12 @@ a:visited{
 .contenedortotal{
     display: grid;
     grid-template-columns: repeat(2, 1fr);/* 2 columnas */
-    grid-template-rows: 0.2fr 0.2fr 1fr 1fr 0.2fr; /* 4 filas */
+    grid-template-rows: 0.2fr 0.2fr 1fr 1fr 0.2fr 0.2fr; /* 4 filas */
     grid-template-areas:
     "titulo titulo"
     "menu menu"
     "contenidop1 contenidop2"
+    "contenidop3 contenidop3"
     "publicidad publicidad"
     "footer footer";
     column-gap:15px;
@@ -126,11 +135,32 @@ a:visited{
 .contenidop2{
     grid-area: contenidop2;
 }
+
+.contenidop3{
+    grid-area: contenidop3;
+}
 .Publicidad{
     grid-area: publicidad;
+    
 }
 .pie.pag{
     grid-area: footer;
+}
+footer{
+    background-color: black;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    color: #fafafa;
+}
+
+footer p{
+        color: #fafafa;
+}
+
+footer .box{
+    display: inline-flex;
 }
 /* aplicando estilo al formulario de contactenos */
 
@@ -164,8 +194,19 @@ input,
     box-shadow: 0 0 3px chocolate;
     vertical-align: top;
     border:1px solid #ccc;
+    position:center;
   }
    option{
      align-items: center;
+     position:relative;
   }
+
+  fieldset{
+    display: inline-block;
+    width: 600px;
+    border:1px solid #ccc;
+    border-radius: 1em;
+    box-sizing: border-box;
+   
+}
   

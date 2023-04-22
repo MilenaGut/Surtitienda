@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- compatibilidad con IE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- adaptacion a pantallas, celulares, tablets -->
     <title>SURTITIENDA MONACO</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="multimedia/fruver1.jpg" type="image/x-icon">
     <style>
@@ -16,15 +18,15 @@
 <body> 
     <div class="contenedortotal">
         
-        <h1 class="titul">Surtitienda Mónaco</h1> 
+        <h1 class="titul">Surtitienda Monaco</h1>
             <!-- titulo del encabezado --> 
-        <header class="header">  
+        <header class= "header">  
             <nav>
                 <div id="menust">
                 <!-- Home- Galeria -Contactos -->
                 <!-- Contenido Principa -->
                 <ul>
-                    <li><a href=".index.html">Inicio</a> </li>
+                    <li><a href="index.html">Inicio</a> </li>
                     <li><a href="paginas/Categorias.html">Categorías</a> </li>
                     <li><a href="paginas/ofertas.html">Ofertas del dia</a></li>
                     <li><a href="paginas/cupones.html">Tus Cupones </a></li>
@@ -38,17 +40,29 @@
             <div>
                 <!-- menu de navegacion -->
                 <h3>Encuentras todo lo relacionado con Viveres y verduras</h3>
-                <P>Por Cada compra superior a cien mil pesos, recibe un bono de cinco mil Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea culpa ducimus error accusantium, inventore saepe modi voluptas, voluptates, nostrum consectetur explicabo minima? Sunt repudiandae corporis, consectetur quis pariatur veniam nobis soluta atque voluptates odio, a ipsa sint molestias amet, ratione illum numquam laudantium blanditiis harum iure ipsam perspiciatis omnis! Nisi facere exercitationem quibusdam? Minima repellendus hic quo mollitia ullam sequi?</P>
+                <P class="ganga">Por Cada trescientos mil pesos en compras acumuladas, obtienes un bono de $10.000</P>
+                <ul>
+                    <li>Víveres<img src="multimedia/viverees1.jpg" alt=""></li>
+                    <li>Verduras <img src="multimedia/fruver1.jpg" alt=""></li>
+                    <li>Productos Aseo Personal</li>
+                    <li>Y Mas para tu hogar</li>
+                </ul>
                 <a target="_blank" href="https://www.google.com/?hl=es"></a>
                 <!-- Nota Principal; alt+z veo el codigo en bloque --> 
             </div>
         </main>
+
+        <section class="contenidop3">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ipsam nesciunt non facere officia cupiditate excepturi molestiae? At ad recusandae aliquid ipsa? Aperiam, praesentium voluptates commodi tempora libero ducimus laboriosam!</p>
+        </section>
         
             <article class="contenidop2">
                 <div>
                     <h3>Valor Nutricional</h3>
                     <p>Somos una empresa comprometida con generar conciencia sobre la importacion de una alimentacion balanceada</p>
                     <img  src="multimedia/fruver2.jpg" class="fruver2">
+                </div>
+                <div>
                         <table class="Nutricion">
                             <table border = "1px"> 
                         <tr>
@@ -67,14 +81,15 @@
                             <td>verdes</td>
                             <td>30%</td>
                         </tr>
-                    
                     </table>
                 </div>
+            </div>
                 <!-- articulos de la seccion -->
            </article>
         
         <aside class="Publicidad">
             <div>
+                <h3>Mayor Info</h3>
             <!-- Publicidades -->
                 <p>Una buena alimentacion influeye en nuestra salud, conoce más aca:</p>
                 <a href="https://www.lechepuleva.es/aprende-a-cuidarte/tu-alimentacion-de-la-a-z/v/verduras-u-hortalizas" target="_blank">Conoce mas sobre valor nutricional de verduras</a>
@@ -84,23 +99,13 @@
         <footer class="pie.pag">
             <div class="grupopp">
                 <div class="box">
-                    <figure>
-                        <a href="#">
-                            <img src="" alt="">
-                        </a>
-                    </figure>
-                </div>
-                <div class="box">
                     <h2>SOBRE NOSOTROS</h2>
-                    <P>Somos una empresa familiar dedicado al comercio al menor y detal de viveres y barrotes, desde el año 2015
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti eos cupiditate perspiciatis fuga aspernatur, tempore vel voluptate ipsa blanditiis in quisquam dolorum tempora accusantium inventore culpa cumque pariatur nostrum assumenda.
-                    </P>
                 </div>
 
                 <div class="box">
                     <h2>SIGUENOS</h2>
                     <div class="redsoc">
-                        <a href="#" class="fa fa-Facebook"></a>
+                        <a href="#" class="fa fa-Facebook" Facebook></a>
                         <a href="#" class="fa-fa-instagram"></a>
                         <a href="#" class="fa-fa-whatsapp"></a>
                     </div>
@@ -111,6 +116,5 @@
             </div>
             <!-- pie de pagina -->
         </footer>
-    </div>  
-  </body>
+     </body>
 </html>
