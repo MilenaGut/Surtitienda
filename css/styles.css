@@ -1,62 +1,72 @@
 /* importante resetear estas propiedades */
+
+  @import url('https://fonts.googleapis.com/css2?family=Labrada:wght@300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,300;1,500;1,600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    
-}
-@media (min-width: 700px) and (orientation: landscape) { ... }
-
-
-.body{
-   
     box-sizing: border-box;
+    text-decoration: none;
     font-family: 'Labrada', serif;
     font-family: 'Nanum Myeongjo', serif;
-     
 }
+
+@media (min-width: 700px) and (orientation: landscape) { 
 
 .titul{
-    /* background-color: rgb(4, 56, 59); */
-    background-color: rgb(48, 235, 235);
-    color: #fffdfd;;
-    font-size: 35px;
-    text-align: center;
-    border-top: 5px inset rgba(172, 184, 247, 0.897);
-    border-bottom: 5px outset rgba(123, 201, 129, 0.897);
-    border-radius: 0.2em;
+    display: flex;
+    height: 150px;
+    color:darkgoldenrod;
+    background-color: #011220;
+    justify-content:space-between;
+    align-items: center;
     padding: 10px;
-    height: 60px;
+    top: 0px;
+
+    }
+
+.titul .h1{
+    font-size:xx-large
 }
-
-/* .div {
-    width: auto;
-    border: 5px solid rgb(2, 83, 129);
-    padding: 20px;
-    margin: 10px;
-  }   */
-
+   
 nav{
-       height: 80px;
-       background-color:#0c8c91;
-       justify-self: center;        
+       width: 100;
+       height: auto;
+       display: flex;
+       background-color:#a5f1f1;
+       justify-self: center;  
+           
      }
 
      nav ul{
-        list-style: none;
-        display:inline-flexbox;
-        justify-content: center;
-        align-items: start;
-        padding:5px;
+        list-style:none;
+        display:contents;
+        justify-content:center;
+        align-items: center;
+        width: 100px;
+        margin top: 0px;
+        padding: 20px 5px;
+       
         
      }
 
      nav ul li{
-        float:left;
-        margin: 5px;
-        justify-content: center;
+        list-style: none;
+        display:flexbox;
+        justify-content:space-between;
+        align-items: center;
+        padding: 44px;;
+        width: 100%;
+        margin: auto;
+        grid-template-columns: repeat(3, 0.1fr);
+        grid-gap:50px;
         
-     }
+           
+    }
 
+        
     nav ul li a {
         color: white;
         font-weight:lighter;
@@ -65,7 +75,6 @@ nav{
         flex-direction: row;
         padding: 10px;
         
-        
     }
         
 
@@ -73,28 +82,75 @@ nav{
         background-color: rgb(81, 3, 88);
         color: blanchedalmond;
     }
+}
 p{
-    color: rgb(1, 1, 17);
+    color: rgb(250, 250, 250);
     
 }
 
 .Nutricion{
-    position:fixed;
-    flex-direction: column;
+    display: flex;
+    position:relative;
+    flex-direction:inherit;
+    margin: 10px;
+    color: #fff;
 }
-.fruver2{
-    
-    width: 300px;
-    height:200px;
-    display: grid;
+
+.table {
+    width: auto;
+    border: 5px solid rgb(2, 83, 129);
+    padding: 20px;
+    margin: 10px;
+  }   
+
+.contenidop1{
+    /* display: flexbox; */
     align-items: center;
-    grid-template-rows: 1fr 0.5fr;
-    grid-template-columns: 0.3fr 1fr;
-    grid-template-areas: 
-    "fruver2 fruver2"
-    "fruver2 fruver2"
-    ;
-     
+    color: #fff;
+    background-color:brown;
+    padding: 10px;
+    top: 10px;
+}
+.contenidop2{
+    display: flexbox;
+    align-items: center;
+    background-color: #0d2033;
+    padding: 10px;
+    top: 10px;
+}
+
+.contenidop2 .fruver2{
+        width: 300px;
+        height:200px;
+        display: grid;
+        align-items: center;
+        grid-template-rows: 1fr 0.5fr;
+        grid-template-columns: 0.3fr 1fr;
+        grid-template-areas: 
+        "fruver2 fruver2"
+        "fruver2 fruver2";         
+}
+.contenidop3{
+    display: flexbox;
+    align-items: center;
+    background-color: #2c4055;
+    padding: 10px;
+    top: 10px;
+}
+.contenidop4{
+    display: flexbox;
+    align-items: center;
+    background-color: #259b0e;
+    padding: 10px;
+    top: 10px;
+}
+
+.Publicidad{
+    display:flexbox;
+    align-items: center;
+    background-color:rgb(165, 42, 128);
+    padding: 10px;
+    top: 10px;
 }
  .pie.pag{
     justify-content: center;
@@ -109,21 +165,19 @@ a:visited{
     color: rgb(0, 195, 255); 
 }
 
-/* GRID - CONTENEDOR */
+/* GRID - CONTENEDOR INDEX */
 
 .contenedortotal{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);/* 2 columnas */
-    grid-template-rows: 0.2fr 0.2fr 1fr 1fr 0.2fr 0.2fr; /* 4 filas */
-    grid-template-areas:
-    "titulo titulo"
-    "menu menu"
-    "contenidop1 contenidop2"
-    "contenidop3 contenidop3"
-    "publicidad publicidad"
-    "footer footer";
-    column-gap:15px;
-    row-gap:  15px;
+    grid-template-columns: repeat(3, 3fr);/* 3 columnas */
+    grid-template-rows: 0.2fr 0.7fr 0.7fr 0.2fr; /* 4 filas */
+    grid-template-areas: 
+   "titulo titulo titulo"
+    "menu contenidop1 contenidop2"
+    "menu contenidop3 publicidad"
+    "footer footer footer";
+    column-gap:5px;
+    row-gap:  5px;
 }
 .titul{
     grid-area: titulo;
@@ -144,41 +198,112 @@ a:visited{
 .Publicidad{
     grid-area: publicidad;
     
-}
-.pie.pag{
-    grid-area: footer;
-}
-footer{
-    background-color: black;
-    position:relative;
-    bottom: 0;
+} 
+/* PIE DE PAGINA */
+.mifooter{
     width: 100%;
-    height: auto;
-    color: #fafafa;
+    background-color: #011220;
+}
+.mifooter .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:40px;
+    padding: 25px 0px;
+}
+.mifooter .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mifooter .grupo-1 .box figure img{
+    width: 250px;
+}
+.mifooter .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.mifooter .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.mifooter .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.mifooter .grupo-1 .red-social a:hover{
+    color: rgb(11, 214, 214);
+}
+.mifooter .grupo-2{
+    background-color: #010508;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.mifooter .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .mifooter .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
 }
 
-footer p{
-        color: #fafafa;
-}
-
-footer .box{
-    display: inline-flex;
-}
 /* aplicando estilo al formulario de contactenos */
 
+/* GRID - CONTENEDOR INDEX */
+
+.contenedor-contactenos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);/* 3 columnas */
+    grid-template-rows: 0.2fr 1fr 0.2fr; /* 3 filas */
+    grid-template-areas:
+    "titulo titulo titulo"
+    "header formulario formulario"
+    "footer footer footer";
+    column-gap:5px;
+    row-gap:  5px;
+}
+.titul{
+    grid-area: titulo;
+}
+
+.headercont{
+    grid-area: header;
+}
+
+.formulario{
+    grid-area: formulario;
+
+}
+
+.mifooter{
+    grid-area: footer;
+    
+}
+@media screen and (max-width:800px){
 .contactenos p{
     text-align: center;        
   }
-/* .leyenda{
-    display: inline-flexbox;
-    align-items: center;
-    width: 600px;
-    padding: 1em;
-    border:1px solid #ccc;
-    border-radius: 1em;
-    background-color: rgb(180, 224, 224);
-} */
 
+}
+/* ESTILO A FORMULARIO DE PAGINA CONTACTENOS */
 form{
     margin: 0 auto;
     font-family:Arial, Helvetica, sans-serif;
@@ -195,9 +320,9 @@ form label{
     width: 150px;
     text-align:left;
   }
-form input,
+  form input,
 textarea{
-    /* Tamaño y alineación uniforme */
+    /* Tamaño y aineación uniforme */
     display: inline-block;
     width: 400px;
     padding-right: 10px;
@@ -227,4 +352,58 @@ fieldset label{
 }
 fieldset input{
     vertical-align: text-top;
+}
+/* APLICANDO GRID A CATEGORIA */
+.contenedor-categoria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);/* 3 columnas */
+    grid-template-rows: 0.2fr 1fr 0.2fr; /* 3 filas */
+    grid-template-areas:
+    "titulo titulo"
+    "header frutas"
+    "footer footer";
+    column-gap:5px;
+    row-gap:  5px;
+}
+.titul{
+    grid-area: titulo;
+}
+
+.headercateg{
+    grid-area: header;
+}
+
+.cat-frutas{
+    grid-area: frutas;
+
+}
+
+.mifooter{
+    grid-area: footer;
+    
+}
+/* catalogo de imagenes */
+div .cat-frutas{
+    margin: 10px;
+    box-shadow: 0px,8px,4px,0px forestgreen;
+    float: left;
+    background-color: #0d2033;
+    width: auto;
+}
+
+div .cat-frutas img{
+        width: 100%;
+        height:100px;
+              
+}
+div .cat-frutas:hover{
+    border: 1px solid rgb(240, 47, 191);
+    transform: rotate(-3deg);
+    
+}
+
+div .pie{
+    text-align: center;
+    text-shadow: #a5f1f1;
+    padding: 10px;
 }
