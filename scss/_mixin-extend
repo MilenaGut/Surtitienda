@@ -1,0 +1,31 @@
+/* mixin sin parametros */
+@mixin flexpadding{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+} 
+
+@mixin footerini{
+    width: 100px;
+    background-color:$fondopiepag;
+}
+
+footer {
+@include flexpadding;
+}
+
+/* mixin con parametros */
+
+@mixin grillaFlex($display, $direction){
+    display: $display;
+    flex-direction: $direction;
+}
+
+@mixin grillaGrid($display, $col, $row){
+    display: $display;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+}

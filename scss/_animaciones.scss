@@ -1,0 +1,29 @@
+
+
+/*.vivehue{
+   /*  height: 150px;
+    /* transform: rotate(-54deg); */
+    /* transform: scale(1:2);*/
+   /*  transform:skew (20deg,10deg); */
+  /* transition: 2s;
+
+    &:hover{
+        height: 80px;
+   }
+} */
+
+@keyframes opacidad{
+    0%{
+        opacity: 100px;}
+    50%{
+        opacity: 50px;}
+    100%{
+        opacity: 0px;}
+}
+  
+.imagengde{
+    animation: opacidad;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
