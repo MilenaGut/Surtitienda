@@ -7,15 +7,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,300;1,500;1,600&display=swap");
 .contenedor-contactenos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  grid-template-rows: 0.2fr 1fr 0.2fr; /* 3 filas */
-  grid-template-areas: "titulo titulo titulo" "header formulario formulario" "footer footer footer";
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  grid-template-rows: 0.2fr 1fr; /* 2 filas */
+  grid-template-areas: "header header" "formulario formulario" "footer footer";
   column-gap: 5px;
   row-gap: 5px;
 }
 
-.titul {
-  grid-area: titulo;
+header {
+  grid-area: header;
 }
 
 .headercont {
@@ -205,7 +205,7 @@ fieldset input {
   grid-gap: 5px;
 }
 .frutas img {
-  width: 300px;
+  width: 500px;
   height: 300px;
   object-fit: cover;
   border-radius: 2px;
@@ -227,6 +227,9 @@ fieldset input {
   text-align: start;
   text-shadow: #a5f1f1;
   padding: 10px;
+  margin-right: 5px;
+  color: antiquewhite;
+  width: 50px;
 }
 
 /* catalogo de imagenes VERDURAS */
@@ -442,10 +445,6 @@ fieldset input {
     padding: 35px 0px;
   }
 }
-p {
-  color: rgb(0, 0, 0);
-}
-
 .precios {
   display: flex;
   position: relative;
@@ -588,91 +587,6 @@ a:visited {
     grid-gap: 30px;
     padding: 35px 0px;
   }
-}
-/* aplicando estilo al formulario de contactenos */
-/* GRID - CONTENEDOR INDEX */
-.contenedor-contactenos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  grid-template-rows: 0.2fr 1fr 0.2fr; /* 3 filas */
-  grid-template-areas: "titulo titulo titulo" "header formulario formulario" "footer footer footer";
-  column-gap: 5px;
-  row-gap: 5px;
-}
-
-.titul {
-  grid-area: titulo;
-}
-
-.headercont {
-  grid-area: header;
-}
-
-.formulario {
-  grid-area: formulario;
-}
-
-.mifooter {
-  grid-area: footer;
-}
-
-@media screen and (max-width: 800px) {
-  .contactenos p {
-    text-align: center;
-  }
-}
-/* ESTILO A FORMULARIO DE PAGINA CONTACTENOS */
-form {
-  margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 600px;
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
-  background-color: rgb(180, 224, 224);
-}
-
-form label {
-  /* Tamaño y alineación uniforme */
-  display: inline-block;
-  width: 150px;
-  text-align: left;
-}
-
-form input,
-textarea {
-  /* Tamaño y aineación uniforme */
-  display: inline-block;
-  width: 400px;
-  padding-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 1em;
-  box-sizing: border-box;
-  vertical-align: top;
-}
-
-option {
-  align-items: center;
-  position: relative;
-}
-
-fieldset {
-  margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 600px;
-  margin-top: 10px;
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
-  background-color: rgb(180, 224, 224);
-}
-
-fieldset label {
-  width: 300px;
-}
-
-fieldset input {
-  vertical-align: text-top;
 }
 
 /*# sourceMappingURL=styles.css.map */

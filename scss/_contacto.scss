@@ -3,17 +3,17 @@
 
 .contenedor-contactenos{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);/* 3 columnas */
-  grid-template-rows: 0.2fr 1fr 0.2fr; /* 3 filas */
+  grid-template-columns: repeat(2, 1fr);/* 2 columnas */
+  grid-template-rows: 0.2fr 1fr; /* 2 filas */
   grid-template-areas:
-  "titulo titulo titulo"
-  "header formulario formulario"
-  "footer footer footer";
+  "header header"
+  "formulario formulario"
+  "footer footer";
   column-gap:5px;
   row-gap:  5px;
 }
-.titul{
-  grid-area: titulo;
+header{
+  grid-area: header;
 }
 
 .headercont{
