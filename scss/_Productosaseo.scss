@@ -1,0 +1,100 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing:border-box;
+}
+
+.contenedor-categoria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);/* 3 columnas */
+    grid-template-rows: repeat(2); /* 3 filas */
+    grid-template-areas:
+    "header header"
+    "contenidop3 contenidop4"
+    "footer footer";
+    column-gap:5px;
+    row-gap:  5px;
+}
+
+
+.headercateg{
+    grid-area: header;
+}
+
+.contenedortotal .contenidop3{
+    grid-column-start: contenidop3;
+    grid-column-end:contenidop3;
+
+}
+
+.contenedortotal .contenidop4{
+    grid-column-start: contenidop4;
+    grid-column-end:contenidop4;
+
+}
+
+
+.mifooter{
+    grid-area: footer;
+    
+}
+
+/* APLICANDO GRID A CATEGORIA */
+
+/* catalogo de imagenes FRUTAS */
+
+.contenidop3{
+display: flexbox;
+align-items: center;
+background-color: #039481;
+padding: 10px;
+top: 10px;
+}
+.contenidop4{
+display: flexbox;
+align-items: center;
+background-color: #adc0d6;
+padding: 10px;
+top: 10px;
+}
+
+
+.contenidop3{
+        
+    width: 100%; 
+    display: flex;
+    
+    
+    
+.aseohogarimg{
+    
+    flex-wrap:nowrap;
+    height: 350px;
+    width: 100%; 
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 5px;
+    margin:5px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:5px;
+    /* flex:1 0 auto; */
+    .p3img{
+    
+        width: 300px;
+        height:300px;
+        object-fit: cover;
+        border-radius: 2px;
+        box-shadow: 0 0 5px #06360b; 
+        scroll-snap-align: center;
+        
+    }
+   
+    
+}
+    
+}
+   
+
