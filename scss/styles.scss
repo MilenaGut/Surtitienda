@@ -24,8 +24,8 @@
 .contenedortotal{
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(1fr 1fr);/* 2 columnas */
-    grid-template-rows: repeat(3); /* 3 filas */
+    grid-template-columns: repeat(1 1fr);/* 2 columnas */
+    grid-template-rows: repeat(3 1fr); /* 3 filas */
     grid-template-areas: 
    "header header"
     "carouselproductos carouselproductos"

@@ -1,10 +1,10 @@
 /* aplicando estilo al formulario de contactenos */
 /* GRID - CONTENEDOR INDEX */
 
-.contenedor-contactenos{
+.contenedorcontactenos{
   display: grid;
   grid-template-columns: repeat(2, 1fr);/* 2 columnas */
-  grid-template-rows: 0.2fr 1fr; /* 2 filas */
+  grid-template-rows: 1, 1fr; /* 2 filas */
   grid-template-areas:
   "header header"
   "formulario formulario"
@@ -13,45 +13,28 @@
   row-gap:  5px;
 }
 header{
-  grid-area: header;
+    grid-column-start: header;
+    grid-column-end:header;
 }
 
-.headercont{
-  grid-area: header;
-}
+
 
 .formulario{
-  grid-area: formulario;
+  grid-column-start: formulario;
+  grid-column-end:formulario;
 
 }
 
 .mifooter{
-  grid-area: footer;
+  grid-column-start: footer;
+  grid-column-end:   footer;
   
 }
-@media screen and (max-width:800px){
-.form{
-  
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
-    }
-}      
 
 
-.contactenos p{
+.contactenos{
     text-align: center;        
   }
-/* .leyenda{
-    display: inline-flexbox;
-    align-items: center;
-    width: 600px;
-    padding: 1em;
-    border:1px solid #ccc;
-    border-radius: 1em;
-    background-color: rgb(180, 224, 224);
-} */
 
 form{
     margin: 0 auto;
@@ -109,58 +92,29 @@ fieldset input{
     height: $imagengde*3;
 }
 
+@media screen and (max-width:800px){
+  form{
+  
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:5px;
+        padding: 15px 0px;
+     
+    }
+} 
+
+@media screen and (max-width:800px){
+  fieldset{
+  
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:5px;
+        padding: 15px 0px;
+       
+    }
+} 
+
 /* aplicando estilo al formulario de contactenos */
 
 
 /* ESTILO A FORMULARIO DE PAGINA CONTACTENOS */
-form{
-  margin: 0 auto;
-  font-family:Arial, Helvetica, sans-serif;
-  width: 600px;
-  padding: 1em;
-  border:1px solid #ccc;
-  border-radius: 1em;
-  background-color: rgb(180, 224, 224);
-}
-
-form label{
-  /* Tamaño y alineación uniforme */
-  display: inline-block;
-  width: 150px;
-  text-align:left;
-}
-form input,
-textarea{
-  /* Tamaño y aineación uniforme */
-  display: inline-block;
-  width: 400px;
-  padding-right: 10px;
-  border:1px solid #ccc;
-  border-radius: 1em;
-  box-sizing: border-box;
-  vertical-align: top;
-}
-
-option{
-   align-items: center;
-   position:relative;
-}
-
-fieldset{
-  margin: 0 auto;
-  font-family:Arial, Helvetica, sans-serif;
-  width: 600px;
-  margin-top: 10px;
-  padding:1em;
-  border:1px solid #ccc;
-  border-radius: 1em;
-  background-color: rgb(180, 224, 224);
-   }
-fieldset label{
-  width: 300px;
-}
-fieldset input{
-  vertical-align: text-top;
-}
-
-
