@@ -85,13 +85,21 @@ fieldset input {
 }
 
 /* operaciones */
-.imagengrande {
-  height: 1500px;
-}
-
 @media screen and (max-width: 800px) {
   form {
-    width: 90%;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    padding: 15px 0px;
+  }
+  form input {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    padding: 15px 0px;
+  }
+  form textarea {
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
     padding: 15px 0px;
@@ -99,7 +107,7 @@ fieldset input {
 }
 @media screen and (max-width: 800px) {
   fieldset {
-    width: 90%;
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
     padding: 15px 0px;
@@ -276,6 +284,12 @@ fieldset input {
 
 @media screen and (max-width: 800px) {
   .mifooter .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .mifooter .grupo-1 .mifooter iframe {
     width: 90%;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;

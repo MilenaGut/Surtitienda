@@ -17,8 +17,6 @@ header{
     grid-column-end:header;
 }
 
-
-
 .formulario{
   grid-column-start: formulario;
   grid-column-end:formulario;
@@ -88,30 +86,43 @@ fieldset input{
 
 /* operaciones */
 
-.imagengrande{
-    height: $imagengde*3;
-}
-
 @media screen and (max-width:800px){
   form{
   
-        width: 90%;
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-gap:5px;
         padding: 15px 0px;
      
-    }
+     input{
+  
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap:5px;
+      padding: 15px 0px;
+   
+  }
+
+  textarea{
+  
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:5px;
+    padding: 15px 0px;
+ 
+}
 } 
+}
 
 @media screen and (max-width:800px){
   fieldset{
   
-        width: 90%;
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-gap:5px;
         padding: 15px 0px;
        
-    }
+    } 
 } 
 
 /* aplicando estilo al formulario de contactenos */

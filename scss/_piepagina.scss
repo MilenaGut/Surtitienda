@@ -68,5 +68,12 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap:30px;
         padding: 35px 0px;
+
+        .mifooter iframe{
+            width: 90%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap:30px;
+            padding: 35px 0px;
+        }
     }
 }
