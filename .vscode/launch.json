@@ -9,8 +9,8 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\Ing Dairon Romero\\Documents\\MGR P\\CODERHOUSE\\Entregafinalgutierrezjs\\index.html"
-           
+            "file": "c:\\Users\\Ing Dairon Romero\\Documents\\JAVA SCRIPT\\index.html"
         }
+        
     ]
 }
